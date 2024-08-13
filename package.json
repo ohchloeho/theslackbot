@@ -1,0 +1,14 @@
+{
+  "name": "slackbot_skeleton",
+  "version": "1.0.0",
+  "description": "a skeleton template for a custom slackbot for public channels",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "chloe ho",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
