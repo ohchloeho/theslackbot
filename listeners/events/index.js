@@ -1,1 +1,3 @@
-module.exports.register = (app) => {}
+module.exports.register = (app) => {
+
+}

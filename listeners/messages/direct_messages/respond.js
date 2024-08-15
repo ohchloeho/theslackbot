@@ -42,7 +42,7 @@ const respond = async ({ message, say }) => {
             type: "plain_text",
             text: "Choose me",
           },
-          url: "google.com",
+          url: "https://google.com",
           action_id: "action_1",
         },
       },

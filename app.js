@@ -16,7 +16,11 @@ registerListeners(app);
 
 (async () => {
   // Start your app
-  await app.start();
+  try {
+    await app.start();
+  } catch (error) {
+    console.log(error);
+  }
 
   console.log("⚡️ Bolt app is running!");
 })();

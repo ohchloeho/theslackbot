@@ -10,9 +10,16 @@ const publicChannelResponseHandler = async ({ message, say }) => {
         message,
         say,
       });
+
+      if (
+        conditions.some((condition) => condition.afterResponse !== null)
+      ) {
+        await conditions
+          .find((condition) => condition.check(message))
+          .afterResponse({ message, say });
+      }
     }
   } catch (error) {
-    console.log(error);
   }
 };
 

@@ -4,11 +4,13 @@
   "description": "a skeleton template for a custom slackbot for public channels",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "NODE_TLS_REJECT_UNAUTHORIZED='0' nodemon app.js"
   },
   "author": "chloe ho",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "@slack/bolt": "^3.21.0",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4"
   }
 }
